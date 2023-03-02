@@ -1,0 +1,28 @@
+@import "../../variable.scss";
+.product-card-container {
+    background-color: rgba(87, 79, 79, 0.336);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-align: center;
+    }
+
+    img {
+        width:200px;
+        height: 200px;
+    }
+}
+
+.card-content {
+    color: $high-white;
+    padding: 10px;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
