@@ -1,0 +1,58 @@
+@import "../../variable.scss";
+.product-detail-container{
+    
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    height: 700px;
+}
+.grid-right{
+   
+    padding: 20px;
+    h2,h3,h4{
+        color:$high-white;
+    }
+    span{
+        color: green;
+    }
+    
+}
+
+.price{
+    text-decoration:line-through
+}
+.prices{
+    display: flex;
+    gap: 2rem;
+    h3{
+        color: $red;
+    }
+}
+
+button{
+    background-color: $high-white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+    transition: all .5s ease-in-out;
+    &:hover{
+        transform:scale(1.1);
+        background-color:$red
+        
+    }
+}
+
+.add-card{
+    select{
+        border: none;
+        font-weight: bold;
+        background-color: $high-white;
+    }
+    display: flex;
+    justify-content: space-between;    
+}
+.properties{
+    color: $high-white;
+    margin-top: 200px;
+}
