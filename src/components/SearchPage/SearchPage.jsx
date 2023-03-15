@@ -13,6 +13,8 @@ const SearchPage = () => {
         dispatch(getSearchedProducts(searchTerm))
     }, [searchTerm])
 
+    if (products.length === 0) return "Loading..."
+
     return (
         
         <div className='search-page-container'>

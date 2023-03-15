@@ -1,0 +1,100 @@
+@import '../../variable.scss';
+
+html {
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    color: $low-white
+}
+
+.loginpage-container {
+    background-color: $bg-container;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $bg-gray;
+    border-radius: 5%;
+    width: 35rem;
+    height: auto;
+}
+
+.input {
+    padding: 5px;
+}
+
+.input {
+    label {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    input {
+        box-shadow: inset;
+        border: 2px whitesmoke;
+        width: 15rem;
+        height: 2rem;
+        background-color: rgb(238, 238, 238);
+        border-color: aliceblue;
+        font-size: 20px;
+    }
+}
+
+.icon-user {
+    padding-left: 40px;
+    background: url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat left;
+    background-size: 30px;
+}
+
+.icon-key {
+    padding-left: 40px;
+    background: url("https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/104-512.png") no-repeat left;
+    background-size: 30px;
+}
+
+.submit-button {
+    
+    margin-top: 10px;
+    background-color: rgb(77, 172, 196);
+    border: 3px black;
+    border-radius: 10%;
+    margin: 4px;
+    cursor: pointer;
+    transition-duration: 500ms;
+    span {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 2px;
+        color:rgba(0, 0, 0, 0.753);
+    }
+
+    &:hover {
+        background-color: azure;
+    }
+
+}
+
+.error{
+    color: rgba(192, 18, 18, 0.925);
+    font-weight: 400;
+}
+
+form {
+    h1{
+        font-size: 3rem;
+        padding-bottom: 80px;
+    }
+}
+
+.buttons{
+    
+    padding:20px 0px 50px 0px;
+}

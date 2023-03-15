@@ -6,21 +6,13 @@ import {useDispatch,useSelector} from "react-redux"
 import ProductCard from '../ProductCard/ProductCard';
 
 
-const Products = () => {
-    const products=useSelector((state)=>state.products)
-    const dispatch=useDispatch();  
-
-
-    useEffect(() => {
-      dispatch(getTechnologicalProducts())      
-    },[])
-
-    
+const Products = ({products}) => {
+     console.log("products",products)
   return (
     <div className='products'>
       {products.map((product,index)=>(
         <div key={index}>
-          <ProductCard product={product} />
+          <ProductCard item={product.item} />
           </div>
       )
       )}

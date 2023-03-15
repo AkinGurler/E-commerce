@@ -5,22 +5,19 @@ body {
     background: $bg-container;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    font-weight: 200;
-
+    font-weight: 200;   
 }
 
 
 .nav-container {
-    z-index: 1;
-    padding: 1rem 5rem 1rem 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         border-radius: 7%;
     }
 }
@@ -28,14 +25,16 @@ body {
 .nav-right {
     display: flex;
     flex-direction: row;
+   
 
     a {
         color: rgba(255, 255, 255, 0.562);
         font-weight: bold;
         padding: 10px;
         text-decoration: none;
-
+        transition: all .5s ease-in-out;
         &:hover {
+            transform: scale(1.1);
             color: $red;
             color: white;
         }
@@ -43,13 +42,13 @@ body {
 }
 
 .active {
-    border-bottom: 5px solid $red;
+    border-bottom: 5px solid $logo-yellow;
     color: rgba(255, 255, 255, 0.932) !important
 }
 
 
 .dropdown1 {
-    margin-top: 20px;
+    margin-top: 15px;
     opacity: 1;
     position: absolute;
     overflow: hidden;
@@ -79,5 +78,39 @@ body {
     border: none;
 }
 .fixed-nav{
-    background-color: aquamarine;
+   
+}
+
+.fixed{
+    position: sticky;
+    z-index: 1;
+   top: 0px;
+   background-color: $bg-container;
+}
+.navbar-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .nav-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .fixed{
+        position: relative;
+    }
+
 }

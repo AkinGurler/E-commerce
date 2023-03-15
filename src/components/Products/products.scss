@@ -1,7 +1,9 @@
+@import "../../variable.scss";
 .products{
-    padding: 1rem 5rem 1rem 5rem;
-    color: white;
+ 
+    color: $high-white;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap:2rem;
 }

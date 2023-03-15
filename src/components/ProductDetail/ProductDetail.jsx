@@ -90,9 +90,7 @@ const ProductDetail = () => {
                     </button>
                 </div>
             </div>
-        </div>
-        
-        <div className='properties' >
+            <div className='properties' >
             <h2>Properties</h2>
             {properties.list.map(property=>(
                 <div >
@@ -100,6 +98,9 @@ const ProductDetail = () => {
                 </div>
             ))}    
         </div>
+        </div>
+        
+        
         </div>
        
     )
